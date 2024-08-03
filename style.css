@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(shoping.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 500px;
+  width: 100%;
+}
+
+.cart {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: grey;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  white-space: pre;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  flex: 1;
+  font-weight: bolder;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.quantity-controls button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity-controls span {
+  margin: 0 10px;
+}
+
+.delete,
+.like {
+  background-color: #f44;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+.like {
+  background-color: white;
+}
+
+.liked {
+  background-color: red;
+}
+
+.total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+#total-price {
+  font-weight: bold;
+}
